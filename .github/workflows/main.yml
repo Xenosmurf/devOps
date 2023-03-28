@@ -10,7 +10,9 @@ jobs:
 
   job1:
     runs-on: node.js
-      npm init @eslint/config
+    steps:
+      - run: npm init @eslint/config
+      
   push_to_registry:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
